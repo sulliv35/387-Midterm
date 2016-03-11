@@ -9,5 +9,6 @@ Here is a circuit diagram of project
 ![alt tag](https://raw.githubusercontent.com/sulliv35/387-Midterm/branch/path/to/img.png)
 
 My file is found above under the name ECE387_Midterm.ino
+
 Libraries I used are also include for the LSM303
 
