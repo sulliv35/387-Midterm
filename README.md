@@ -14,6 +14,8 @@ My file is found above under 'Added Code'
 
 References
 
+Accessed March 3, 2016
+
 Libraries I used are also included under 'Base Code' and were taken from https://github.com/adafruit/Adafruit_LSM303
 
 Information on the FLORA accelerometer can be found at https://www.adafruit.com/products/1247 
