@@ -6,7 +6,7 @@ ECE 387 Midterm
   The wiring for this device is pretty straight forward and is shown below
   ![alt tag](https://github.com/sulliv35/387-Midterm/blob/master/ece387Midterm1.png)
   
-  The resistors used are 220Ohms. This provides the LEDs with an approiate current of approximately 15-16mA. The accelerometer is fairly simple to hook up. It requires a 3.3V power supply and ground. Additionally just 2 pins for the clock and data transfer. You can also use the 5V power supply instead of 3.3V if for some reason it was needed.
+  The resistors used are 220Ohms. This provides the LEDs with an approiate current of approximately 15-16mA. The accelerometer is fairly simple to hook up. It requires a 3.3V power supply and ground (2). Additionally just 2 pins for the clock and data transfer. You can also use the 5V power supply instead of 3.3V if for some reason it was needed.
   
   The orientation of the device is determined through reading data in from the accelerometer through use of the provided LSM303 library (1). The library made it easy for me to access values of acceleration in each direction but that is useless without some interpretation. My added value was transferring these values into meaningful information and displaying it nicely through the form of LEDs. If the chip is setting flat I know the x and y axis should be parallel to the ground and thus acceleration should be close to zero, though some threshold should be established as it will not be perfect. Also, to be facing upward, the acceleration in the z axis will be completely negative. Finally, the device uses a magnetometer to read the magnetic field strength allow north to be found. By interpruting the magnetic forces in all direction I was able to indicate through the remaining two lights which direction to rotate in order to be facing north. 
   
@@ -23,5 +23,7 @@ Accessed March 3, 2016
 
 (1) Libraries I used are also included under 'Base Code' and were taken from https://github.com/adafruit/Adafruit_LSM303
 
-(2) Information on the FLORA accelerometer can be found at https://www.adafruit.com/products/1247 
+(2) Accelerometer data sheet https://www.adafruit.com/datasheets/LSM303DLHC.PDF
+
+(3) Information on the FLORA accelerometer can be found at https://www.adafruit.com/products/1247 
 
